@@ -5,49 +5,21 @@ function Coreografia () {
     Part2()
     coreografia_part = 13
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     part1()
     coreografia_part = 14
     Part3()
     coreografia_part = 15
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     par4()
     coreografia_part = 16
     part5()
     coreografia_part = 17
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     par4()
     coreografia_part = 18
     part6()
     coreografia_part = 21
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # # .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     part1()
     coreografia_part = 22
     Part2()
@@ -57,13 +29,6 @@ function Coreografia () {
     Part3()
     coreografia_part = 25
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # # #
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     par4()
     coreografia_part = 26
     part5()
@@ -73,67 +38,25 @@ function Coreografia () {
     part6()
     coreografia_part = 31
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # # #
-        # . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     part1()
     coreografia_part = 32
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # # #
-        # # . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     Part2()
     coreografia_part = 33
     part1()
     coreografia_part = 34
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # # #
-        # # # . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     Part3()
     coreografia_part = 35
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # # #
-        # # # # .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     par4()
     coreografia_part = 36
     part5()
     coreografia_part = 37
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # # #
-        # # # # #
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
     par4()
     coreografia_part = 38
     radio.sendString("C" + convertToText(coreografia_part))
-    basic.showLeds(`
-        # # # # #
-        # # # # #
-        # . . . .
-        . . . . .
-        . . . . .
-        `)
     part6_llarc()
     radio.sendString("fi")
     basic.showLeds(`
@@ -254,6 +177,13 @@ input.onButtonPressed(Button.B, function () {
         }
     }
     radio.sendString("fi")
+    basic.showLeds(`
+        # # . # .
+        # . . # .
+        # # . # .
+        # . . # .
+        # . . # .
+        `)
 })
 function Part3 () {
     music.playTone(494, music.beat(BeatFraction.Half))
