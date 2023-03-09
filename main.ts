@@ -1,3 +1,37 @@
+function gp3 () {
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+}
+function Coreografiagp () {
+    gp1()
+    gp2()
+    gp1()
+    gp3()
+    gp4()
+    gp2()
+    gp4()
+    gp3()
+    gp5()
+    gp6()
+    gp5()
+    gp7()
+    gp4()
+    gp2()
+    gp4()
+    gp8()
+}
 function Coreografia () {
     coreografia_part = 11
     part1()
@@ -81,9 +115,45 @@ function part5 () {
     music.playTone(494, music.beat(BeatFraction.Whole))
     music.rest(music.beat(BeatFraction.Whole))
 }
+function gp8 () {
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(392, music.beat(BeatFraction.Double))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+}
+function gp5 () {
+    music.playTone(659, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(698, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(784, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(523, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+}
 input.onButtonPressed(Button.A, function () {
     music.setVolume(204)
     Coreografia()
+    radio.sendString("fi")
+    basic.showLeds(`
+        # # . # .
+        # . . # .
+        # # . # .
+        # . . # .
+        # . . # .
+        `)
 })
 function part6 () {
     music.playTone(659, music.beat(BeatFraction.Whole))
@@ -138,6 +208,52 @@ function part6_llarc () {
     music.playTone(784, music.beat(BeatFraction.Double))
     music.playTone(784, music.beat(BeatFraction.Double))
 }
+function gp1 () {
+    music.setTempo(140)
+    music.setVolume(169)
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(587, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+}
+function gp4 () {
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+}
+function gp7 () {
+    music.playTone(698, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(523, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+}
 function Part2 () {
     music.playTone(494, music.beat(BeatFraction.Half))
     music.rest(music.beat(BeatFraction.Sixteenth))
@@ -165,17 +281,9 @@ function Part2 () {
     music.playTone(587, music.beat(BeatFraction.Half))
     music.rest(music.beat(BeatFraction.Whole))
 }
-radio.onReceivedString(function (receivedString) {
-    basic.showString(receivedString)
-})
 input.onButtonPressed(Button.B, function () {
-    for (let index = 0; index <= 2; index++) {
-        for (let index2 = 0; index2 <= 7; index2++) {
-            coreografia_part = index * 10 + index2 + 11
-            radio.sendString("C" + convertToText(coreografia_part))
-            basic.pause(4900)
-        }
-    }
+    music.setVolume(204)
+    Coreografiagp()
     radio.sendString("fi")
     basic.showLeds(`
         # # . # .
@@ -185,6 +293,42 @@ input.onButtonPressed(Button.B, function () {
         # . . # .
         `)
 })
+function gp2 () {
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+}
+function gp6 () {
+    music.playTone(698, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(659, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Sixteenth))
+}
 function Part3 () {
     music.playTone(494, music.beat(BeatFraction.Half))
     music.rest(music.beat(BeatFraction.Sixteenth))
